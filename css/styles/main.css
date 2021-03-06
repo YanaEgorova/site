@@ -45,7 +45,7 @@
 .bottom-block {
   position: absolute;
   left: 0;
-  bottom: 1rem;
+  bottom: 10px;
   width: 100%;
   height: 0.3rem;
   background-color: red;
@@ -71,7 +71,7 @@
 }
 .sub-content {
   position: relative;
-  /* min-height: 100vh; */
+  max-height: 100%;
   min-height: 100%;
 }
 .home-section {
@@ -586,6 +586,10 @@
   -moz-transition: all 0.3s ease-in-out;
   -ms-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
+}
+.input {
+  padding-top: 1.6rem;
+  padding-bottom: 1.6rem;
 }
 input:-webkit-autofill,
 input:-webkit-autofill:hover,
@@ -1202,8 +1206,14 @@ input:-webkit-autofill:active {
     margin-right: 10.8rem;
     margin-right: 29rem;
   }
+  .how-wrapper {
+    position: relative;
+    overflow: hidden;
+  }
   .how-hero__right {
     min-width: 81.2rem;
+    position: absolute;
+    right: -18rem;
   }
   /* HOW PAGE END */
   /* HELLO PAGE START */
@@ -1211,4 +1221,54 @@ input:-webkit-autofill:active {
     padding: 20.2rem 28rem 25.6rem 9.6rem;
   }
   /* HELLO PAGE END */
+}
+
+@media screen and (min-width: 1350px) {
+  .how-hero__right {
+    right: -14rem;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .how-hero__right {
+    right: -5rem;
+  }
+}
+
+@media screen and (min-width: 1500px) {
+  .how-hero__right {
+    right: 0;
+  }
+}
+
+@media screen and (min-width: 1700px) {
+  .how-hero__right {
+    right: 5rem;
+  }
+}
+@media screen and (min-width: 1850px) {
+  .how-hero__right {
+    right: 15rem;
+  }
+}
+
+@media screen and (min-width: 2000px) {
+  .how-hero__right {
+    right: 25rem;
+  }
+}
+@media screen and (min-width: 2200px) {
+  .how-hero__right {
+    right: 35rem;
+  }
+}
+@media screen and (min-width: 2560px) {
+  .how-hero__right {
+    right: 50rem;
+  }
+}
+@media screen and (min-width: 2800px) {
+  .how-hero__right {
+    right: 65rem;
+  }
 }
